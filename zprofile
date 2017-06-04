@@ -37,14 +37,16 @@ fi
 typeset -gU cdpath fpath mailpath path
 
 # Set the the list of directories that cd searches.
-# cdpath=(
-#   $cdpath
-# )
+cdpath=(
+  $HOME/Projects
+  $cdpath
+)
 
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  /User/090h/Projects
+  /Users/090h/~/.npm-packages/bin
+  $HOME/.iterm2
   $path
 )
 
@@ -72,3 +74,5 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+#export WINEARCH=win32
+export WINEPREFIX=~/.wine_fuzzbunch

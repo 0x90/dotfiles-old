@@ -32,6 +32,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'osx' \
   'macports' \
+  'docker' \
+  'node' \
   'python' \
   'ssh' \
   'gpg' \
@@ -41,6 +43,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'autosuggestions' \
   'prompt'
 
 #
@@ -104,7 +107,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'cloud' '✯' 'yellow' 'red'
+#zstyle ':prezto:module:prompt' theme 'cloud' '✯' 'yellow' 'red'
+zstyle ':prezto:module:prompt' theme 'skwp'
 
 # Set how themes that use promptpwd function display the pwd, can be 'short', 'long', or 'full'
 # zstyle ':prezto:module:prompt' pwd-length 'short'
@@ -122,6 +126,7 @@ zstyle ':prezto:module:prompt' theme 'cloud' '✯' 'yellow' 'red'
 
 # Auto switch the Python virtualenv on directory change.
 zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+#zstyle ':prezto:module:python:info:virtualenv' format 'virtualenv:%v'
 
 #
 # Screen
@@ -185,10 +190,10 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+#zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+#zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
 zstyle ':prezto:module:tmux:iterm' integrate 'yes'
